@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.project {
+  height: 50vh;
+  background-color: rgb(255, 251, 0);
+  width: 100%;
+}

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+:root {
+  --green: #54aeff;
+  --white: #fff;
+  --blue: #5798e7;
+  --light-white: #aaa;
+  --black: #3d3d3d;
+  --light-bg: #2a313c;
+}
+
+::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 5rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--light-bg);
+}
+.header .flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.header .flex .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.header .flex .logo span {
+  color: var(--green);
+}
+.header .flex .navbar .navlink {
+  margin-left: 2rem;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.header .flex .navbar .navlink:hover {
+  color: var(--green);
+}
+/* Hide menu bar on larger screens */
+#menu-bar {
+  cursor: pointer;
+  color: var(--white);
+  font-size: 2rem;
+  display: none;
+}
+#menu-bar.rotate {
+  transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  /* Show menu bar icon on small screens */
+  #menu-bar {
+    display: inline-block;
+  }
+
+  /* Transform icon when menu is open */
+  #menu-bar svg {
+    transform: rotate(180deg);
+  }
+  /* Navbar hidden by default */
+  .header .flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    border-bottom: 0.1rem solid var(--light-white);
+    background-color: var(--light-bg);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: clip-path 0.3s ease-in-out;
+  }
+
+  /* Show navbar when active */
+  .header .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  /* Mobile menu items */
+  .header .flex .navbar .navlink {
+    display: block;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+  }
+}

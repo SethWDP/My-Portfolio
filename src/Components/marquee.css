@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mq-image {
+  display: flex;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+.mq-image img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  width: 10rem;
+}
