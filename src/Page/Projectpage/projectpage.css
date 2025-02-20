@@ -2,9 +2,63 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+:root {
+  --light: #f8f9fa;
+  --blue: #5798e7;
+  --primary: #2a4668;
+  --secondary: #0eb3ff;
+  --green: #54aeff;
+  --light-white: #aaa;
+  --black: #3d3d3d;
+  --light-bg: #2a313c;
+  --shadow-lg: 0 10px 15px -3px rgba(79, 190, 246, 0.843);
 }
 .project {
-  height: 50vh;
-  background-color: rgb(255, 251, 0);
+  margin-top: 1rem;
+  background-color: var(--light-bg);
   width: 100%;
+}
+.project .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  line-height: 4rem;
+}
+.project .title h2 {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  color: var(--light);
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+.project .title h2::after {
+  content: "";
+  display: block;
+  width: 15rem; /* Adjust width as needed */
+  height: 5px; /* Thickness of the underline */
+  background: var(--blue);
+  position: absolute;
+  bottom: 1px; /* Adjust space between text and underline */
+  left: 50%;
+  transform: translateX(-50%); /* Center the underline */
+  border-radius: 3px; /* Rounded edges */
+}
+.project .title p {
+  font-size: 1.3rem;
+  color: var(--light);
+}
+.pro-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  height: auto;
 }

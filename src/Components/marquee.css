@@ -6,7 +6,7 @@
 .mq-image {
   display: flex;
   gap: 5rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 .mq-image img {
   aspect-ratio: 3/2;
