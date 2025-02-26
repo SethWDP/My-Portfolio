@@ -1,62 +1,55 @@
 import React from "react";
 import ProjectP from "./ProjectP";
 import "./ProjectCard.css";
-import sampleImage from "../../assets/node.png";
+import pro1 from "../../assets/pro1.jpg";
+import pro2 from "../../assets/pro2.jpg";
+import pro3 from "../../assets/pro3.jpg";
+import pro4 from "../../assets/pro4.jpg";
+import pro5 from "../../assets/pro5.jpg";
+import pro6 from "../../assets/pro6.jpg";
 const ProjectCard = () => {
   const projects = [
     {
-      image: sampleImage,
+      image: pro1,
       title: "Restuarant Website",
-      description:
-        "A Frontend e-commerce solution built with HTML CSS and JavaScript",
-      technologies: "HTML CSS JavaScript",
+      description: "A Restaurant Website for Online Food Ordering.",
+      technologies: "HTML, CSS, JavaScript",
       demoLink: "#",
-      codeLink: "#",
     },
     {
-      image: sampleImage,
-      title: "Analytics Dashboard",
-      description:
-        "Interactive data visualization dashboard using D3.js and Vue.js.",
-      technologies: "Vue.js D3.js Firebase",
-      demoLink: "#",
-      codeLink: "#",
+      image: pro2,
+      title: "Online Education",
+      description: "A Frontend Online Education for Self Training.",
+      technologies: "HTML, CSS, JavaScript",
+      demoLink: "https://sethwdp.github.io/Online-Education/",
     },
     {
-      image: sampleImage,
-      title: "Fitness Tracking App",
-      description:
-        "Mobile application built with React Native and Firebase for tracking workouts.",
+      image: pro3,
+      title: "E-Books Sellings",
+      description: "A website for who like to read and buy books online",
+      technologies: "React js, CSS, Bootstrap ",
+      demoLink: "https://ebooksonlineselling.vercel.app/",
+    },
+    {
+      image: pro4,
+      title: "Restaurant E-Commerce",
+      description: "A Restaurant Website for Online Food Ordering and Booking.",
+      technologies: "HTML, CSS, Bootstrap,JavaScript",
+      demoLink: "#",
+    },
+    {
+      image: pro5,
+      title: "Food Panda Clone",
+      description: "I've been cloned the Food Panda website for Ui",
       technologies: "React Native Firebase Redux",
       demoLink: "#",
-      codeLink: "#",
     },
     {
-      image: sampleImage,
-      title: "Fitness Tracking App",
-      description:
-        "Mobile application built with React Native and Firebase for tracking workouts.",
-      technologies: "React Native Firebase Redux",
-      demoLink: "#",
-      codeLink: "#",
-    },
-    {
-      image: sampleImage,
-      title: "Fitness Tracking App",
-      description:
-        "Mobile application built with React Native and Firebase for tracking workouts.",
-      technologies: "React Native Firebase Redux",
-      demoLink: "#",
-      codeLink: "#",
-    },
-    {
-      image: sampleImage,
-      title: "Fitness Tracking App",
-      description:
-        "Mobile application built with React Native and Firebase for tracking workouts.",
-      technologies: "React Native Firebase Redux",
-      demoLink: "#",
-      codeLink: "#",
+      image: pro6,
+      title: "My Photographer Portfolio",
+      description: "A Photographer Portfolio Website for showing his work.",
+      technologies: "HTLM, CSS, Bootstrap,JavaScript",
+      demoLink: "https://my-photograph-web.vercel.app/",
     },
   ];
   return (

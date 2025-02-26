@@ -1,13 +1,6 @@
 import React from "react";
 
-const ProjectP = ({
-  image,
-  title,
-  description,
-  technologies,
-  demoLink,
-  codeLink,
-}) => {
+const ProjectP = ({ image, title, description, technologies, demoLink }) => {
   return (
     <div className="card">
       <img src={image} alt={title} className="card-image" />
@@ -17,10 +10,7 @@ const ProjectP = ({
         <p className="card-technologies">{technologies}</p>
         <div className="card-buttons">
           <a href={demoLink} className="btn1">
-            View Demo
-          </a>
-          <a href={codeLink} className="btn1 outline">
-            View Code
+            View Project
           </a>
         </div>
       </div>

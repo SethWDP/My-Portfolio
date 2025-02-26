@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --light: #f8f9fa;
+  --blue: #5798e7;
+  --primary: #2a4668;
+  --secondary: #0eb3ff;
+  --green: #54aeff;
+  --black: #3d3d3d;
+  --light-bg: #2a313c;
+}
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -14,11 +23,10 @@
 .card {
   width: 320px; /* Set a fixed width for better alignment */
   max-width: 100%;
-  background: white;
+  background: var(--light);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  text-align: center;
 }
 
 .card-image {
@@ -34,16 +42,18 @@
 .card-title {
   font-size: 1.2rem;
   font-weight: bold;
+  color: var(--black);
+  text-align: center;
 }
 
 .card-description {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--black);
 }
 
 .card-technologies {
   font-size: 0.85rem;
-  color: #777;
+  color: var(--black);
   margin-bottom: 10px;
 }
 
@@ -54,16 +64,13 @@
 }
 
 .btn1 {
-  padding: 8px 12px;
-  background: #6a11cb;
+  padding: 8px 2.5rem;
+  background: var(--green);
   color: white;
   border-radius: 5px;
   text-decoration: none;
   font-size: 0.9rem;
 }
-
-.btn.outline {
-  background: transparent;
-  border: 1px solid #6a11cb;
-  color: #6a11cb;
+.btn1:hover {
+  background: var(--blue);
 }

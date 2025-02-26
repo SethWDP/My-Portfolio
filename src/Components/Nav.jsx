@@ -14,7 +14,10 @@ const Nav = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
+  function DownCV() {
+    // window.location.href = "/downloads/PanhaSethCV.pdf";
+    alert("download my cv");
+  }
   return (
     <section>
       <header className="header">
@@ -45,6 +48,9 @@ const Nav = () => {
             >
               Contact
             </Link>
+            <button onClick={DownCV} className="navlink btnd">
+              Download my Cv
+            </button>
           </nav>
           <div
             id="menu-bar"
