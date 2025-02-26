@@ -73,6 +73,10 @@
   position: relative;
   display: inline-block;
 }
+::selection {
+  background-color: var(--blue);
+  color: white;
+}
 
 .about-text h3::after {
   content: "";
