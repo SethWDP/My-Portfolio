@@ -15,8 +15,8 @@ const Nav = () => {
     setMenuOpen(!menuOpen);
   };
   function DownCV() {
-    // window.location.href = "/downloads/PanhaSethCV.pdf";
-    alert("download my cv");
+    window.location.href = "../assets/panha_seth_cv.pdf";
+    // alert("download my cv");
   }
   return (
     <section>
@@ -26,7 +26,7 @@ const Nav = () => {
             Panha <span>Seth</span>
           </a>
           <nav className={`navbar ${menuOpen ? "active" : ""}`}>
-            <Link className="navlink" to="/home" smooth={true} duration={100}>
+            <Link className="navlink" to="/" smooth={true} duration={100}>
               Home
             </Link>
             <Link className="navlink" to="/about" smooth={true} duration={100}>
@@ -62,7 +62,7 @@ const Nav = () => {
         </section>
       </header>
 
-      <Element name="/home">
+      <Element name="/">
         <Home />
       </Element>
 
